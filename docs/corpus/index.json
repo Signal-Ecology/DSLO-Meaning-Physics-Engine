@@ -1,7 +1,10 @@
 {
   "schema_version": "0.1.0",
   "description": "Root index for the DSLO / Signal Ecology semantic corpus.",
-  "papers": [],
+  "papers": [
+  "papers/dslo-core-definition.json"
+]
+,
   "nodes": [],
   "graphs": []
 }
