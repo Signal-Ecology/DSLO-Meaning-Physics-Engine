@@ -1,0 +1,29 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Coherence rules for the TNOPSI / DSLO deterministic semantic substrate.",
+  "coherence": {
+    "semantic_structural_alignment": [
+      "semantic rules must reference valid structural components",
+      "graphs must align with declared semantic interpretation rules",
+      "nodes must conform to semantic atomicity constraints"
+    ],
+    "invariant_semantic_alignment": [
+      "invariants must anchor semantic interpretation",
+      "semantic rules may not contradict invariants"
+    ],
+    "taxonomy_corpus_alignment": [
+      "taxonomy terms must map to existing corpus items",
+      "corpus items must reference valid taxonomy terms"
+    ],
+    "mapping_crosswalk_alignment": [
+      "internal mappings must not contradict external crosswalks",
+      "external crosswalks must not override internal invariants"
+    ],
+    "global_coherence_guarantees": [
+      "no contradictory definitions across components",
+      "no circular semantic dependencies",
+      "no structural-semantic drift"
+    ]
+  },
+  "notes": "This v0.1 coherence block defines cross-component alignment rules ensuring global substrate consistency."
+}
