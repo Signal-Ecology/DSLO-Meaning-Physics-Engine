@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Extended system health and diagnostic status for the TNOPSI / DSLO deterministic semantic substrate.",
+  "status_extended": {
+    "ingestion_ready": true,
+    "structural_health": {
+      "header_complete": true,
+      "corpus_complete": true,
+      "engine_present": true,
+      "no_cross_layer_violations": true
+    },
+    "semantic_health": {
+      "invariants_valid": true,
+      "nodes_atomic": true,
+      "graphs_acyclic": true,
+      "papers_resolved": true
+    },
+    "constraint_health": {
+      "no_mutation_detected": true,
+      "no_drift_detected": true,
+      "append_only_corpus": true
+    },
+    "validation_state": {
+      "integrity_passed": true,
+      "spec_passed": true,
+      "structure_passed": true,
+      "constraints_passed": true,
+      "semantics_passed": true,
+      "corpus_passed": true
+    },
+    "engine_health": {
+      "deterministic_initialization": true,
+      "no_external_dependencies": true,
+      "static_runtime": true
+    }
+  },
+  "notes": "This v0.1 extended status block provides deep diagnostic information for deterministic ingestion."
+}
