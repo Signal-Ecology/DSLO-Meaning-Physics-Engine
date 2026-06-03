@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "description": "Synthesis model for the TNOPSI / DSLO deterministic semantic substrate.",
+  "description": "Synthesis model for the DSLO Deterministic Semantic Layered Orchestration.",
   "synthesis": {
     "semantic_synthesis": [
       "invariants anchor semantic interpretation",
