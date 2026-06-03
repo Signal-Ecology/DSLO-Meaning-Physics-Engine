@@ -3,7 +3,7 @@
   "substrate_type": "deterministic-meaning-substrate",
   "discipline": "Signal Ecology / DSLO",
   "version": "0.1.0",
-  "description": "Metadata describing the TNOPSI / DSLO deterministic semantic substrate.",
+  "description": "Metadata describing the DSLO Deterministic Semantic Layered Orchestration.",
   "components": {
     "manifest": "manifest.json",
     "corpus_index": "corpus/index.json",
