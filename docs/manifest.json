@@ -31,6 +31,7 @@
   "crosswalk": "crosswalk.json",
   "coherence": "coherence.json",
   "synthesis": "synthesis.json",
+  "signature": "signature.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
