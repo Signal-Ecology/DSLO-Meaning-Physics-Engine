@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Constraint model for the TNOPSI / DSLO deterministic semantic substrate.",
+  "constraints": {
+    "structural": {
+      "header_is_static": true,
+      "no_cross_layer_mutation": true,
+      "corpus_is_append_only": true,
+      "engine_is_deterministic": true
+    },
+    "semantic": {
+      "invariants_are_immutable": true,
+      "nodes_must_be_atomic": true,
+      "graphs_must_be_acyclic": true,
+      "papers_must_reference_existing_nodes": true
+    },
+    "drift": {
+      "allowed": false,
+      "bounded_by_invariants": true,
+      "bounded_by_structure": true
+    },
+    "corpus": {
+      "no_deletion": true,
+      "no_rewrite": true,
+      "version_increment_required_for_changes": true
+    },
+    "engine": {
+      "no_dynamic_execution": true,
+      "no_external_dependencies": true,
+      "deterministic_initialization_only": true
+    }
+  },
+  "notes": "This v0.1 constraints block defines the hard boundaries that ensure drift-bounded, deterministic substrate behavior."
+}
