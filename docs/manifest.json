@@ -5,6 +5,7 @@
   "about": "about.json",
   "metadata": "metadata.json",
   "status": "status.json",
+  "routes": "routes.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
