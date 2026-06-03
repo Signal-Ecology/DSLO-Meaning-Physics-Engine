@@ -5,6 +5,9 @@
   "papers/dslo-core-definition.json"
 ]
 ,
-  "nodes": [],
+  "nodes": [
+  "nodes/dslo-definition-node.json"
+]
+,
   "graphs": []
 }
