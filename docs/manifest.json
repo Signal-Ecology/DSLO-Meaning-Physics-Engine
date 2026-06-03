@@ -25,6 +25,7 @@
   "coverage": "coverage.json",
   "roadmap": "roadmap.json",
   "release": "release.json",
+  "identity_extended": "identity-extended.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
