@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "description": "Release metadata for the TNOPSI / DSLO deterministic semantic substrate.",
+  "description": "Release metadata for the DSLO Deterministic Semantic Layered Orchestration.",
   "release": {
     "version": "0.1.0",
     "classification": "foundational",
