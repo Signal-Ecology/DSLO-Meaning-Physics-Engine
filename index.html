@@ -2,10 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>TNOPSI</title>
+    <title>TNOPSI Semantic Substrate</title>
+    <script src="docs/substrate-engine.js"></script>
 </head>
 <body>
-    <h1>TNOPSI Static Substrate</h1>
-    <p>If you see this, GitHub Pages is working.</p>
+    <h1>TNOPSI / DSLO Semantic Substrate</h1>
+    <p>This page initializes the deterministic semantic manifold.</p>
+
+    <pre id="init-output">Initializing…</pre>
+
+    <script>
+        // Deterministic initialization call
+        TNOPSI_Substrate.initialize()
+            .then(payload => {
+                document.getElementById("init-output").textContent =
+                    JSON.stringify(payload, null, 2);
+            })
+            .catch(err => {
+                document.getElementById("init-output").textContent =
+                    "Initialization error: " + err.message;
+            });
+    </script>
 </body>
 </html>
