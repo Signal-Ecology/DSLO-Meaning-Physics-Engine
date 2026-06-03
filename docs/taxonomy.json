@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Top-level taxonomy for the TNOPSI / DSLO deterministic semantic substrate.",
+  "roots": {
+    "dslo": {
+      "id": "taxonomy.dslo.v1",
+      "label": "DSLO",
+      "domains": [
+        "substrate-level semantics",
+        "drift-bounded meaning",
+        "signal interpretation",
+        "agent-environment coupling"
+      ]
+    },
+    "signal_ecology": {
+      "id": "taxonomy.signal.ecology.v1",
+      "label": "Signal Ecology",
+      "domains": [
+        "signal dynamics",
+        "semantic stability",
+        "environmental meaning systems",
+        "multi-agent interpretation"
+      ]
+    }
+  },
+  "notes": "This v0.1 taxonomy defines only the top-level conceptual categories. Subcategories and full ontology expansion occur in later versions."
+}
