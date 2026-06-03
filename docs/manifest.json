@@ -2,6 +2,13 @@
   "schema_version": "0.1.0",
   "manifold_id": "tnopsi-dslo-v0",
   "description": "Deterministic semantic manifold for TNOPSI / DSLO Signal Ecology.",
-  "invariants": [],
+  "invariants": [
+    {
+        "id": "dslo.core.definition.v1",
+        "type": "definition",
+        "statement": "DSLO is a substrate-level meaning system that defines how signals, agents, and environments maintain stable semantics under drift.",
+        "version": "1.0.0"
+    }
+]
   "corpus_index": "corpus/index.json"
 }
