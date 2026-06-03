@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Coverage declaration for the TNOPSI / DSLO deterministic semantic substrate.",
+  "coverage": {
+    "header": {
+      "complete": true,
+      "notes": "All header components for v0.1 are present and validated."
+    },
+    "corpus": {
+      "nodes": "minimal",
+      "papers": "minimal",
+      "graphs": "minimal",
+      "notes": "Corpus contains only the foundational DSLO definition set for v0.1."
+    },
+    "semantics": {
+      "model": "complete",
+      "rules": "minimal",
+      "notes": "Semantic model is fully declared but intentionally minimal for v0.1."
+    },
+    "structure": {
+      "layers": "complete",
+      "constraints": "complete",
+      "notes": "Structural model is fully defined for v0.1."
+    },
+    "governance": {
+      "policy": "complete",
+      "process": "minimal",
+      "notes": "Governance rules are fully declared; process is minimal by design."
+    },
+    "interfaces": {
+      "read_only": true,
+      "write_operations": "none",
+      "notes": "Interface model is complete for v0.1."
+    },
+    "planned_expansions": [
+      "additional nodes",
+      "additional papers",
+      "expanded semantic rules",
+      "extended ontology",
+      "v0.2 corpus growth"
+    ],
+    "intentional_absences": [
+      "dynamic execution",
+      "runtime mutation",
+      "external dependencies",
+      "closed-source components"
+    ]
+  },
+  "notes": "This v0.1 coverage block defines what is complete, partial, planned, and intentionally absent."
+}
