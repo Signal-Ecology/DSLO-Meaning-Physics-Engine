@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "description": "Top-level taxonomy for the TNOPSI / DSLO deterministic semantic substrate.",
+  "description": "Top-level taxonomy for the DSLO Deterministic Semantic Layered Orchestration.",
   "roots": {
     "dslo": {
       "id": "taxonomy.dslo.v1",
