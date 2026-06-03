@@ -26,6 +26,7 @@
   "roadmap": "roadmap.json",
   "release": "release.json",
   "identity_extended": "identity-extended.json",
+  "classification": "classification.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
