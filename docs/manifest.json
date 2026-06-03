@@ -11,6 +11,7 @@
   "integrity": "integrity.json",
   "spec": "spec.json",
   "license": "license.json",
+  "taxonomy": "taxonomy.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
