@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Integrity map for the TNOPSI / DSLO deterministic semantic substrate.",
+  "hash_algorithm": "sha256",
+  "files": {
+    "manifest.json": "sha256-placeholder-manifest",
+    "metadata.json": "sha256-placeholder-metadata",
+    "about.json": "sha256-placeholder-about",
+    "status.json": "sha256-placeholder-status",
+    "routes.json": "sha256-placeholder-routes",
+    "capabilities.json": "sha256-placeholder-capabilities",
+    "changelog.json": "sha256-placeholder-changelog",
+    "init.json": "sha256-placeholder-init",
+    "substrate-engine.js": "sha256-placeholder-engine",
+    "corpus/index.json": "sha256-placeholder-corpus-index",
+    "corpus/nodes/dslo-definition-node.json": "sha256-placeholder-node",
+    "corpus/papers/dslo-core-definition.json": "sha256-placeholder-paper",
+    "corpus/graphs/dslo-core-graph.json": "sha256-placeholder-graph"
+  },
+  "notes": "Placeholder hashes are used for v0.1. Real cryptographic hashes can be added in v0.2."
+}
