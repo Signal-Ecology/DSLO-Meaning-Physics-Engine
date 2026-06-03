@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Execution environment declaration for the TNOPSI / DSLO deterministic semantic substrate.",
+  "environment": {
+    "runtime": "static",
+    "execution_model": "deterministic",
+    "dependencies": [],
+    "compatibility": {
+      "javascript_required": false,
+      "html_required": false,
+      "dynamic_execution": false
+    },
+    "constraints": {
+      "no_mutation": true,
+      "no_side_effects": true,
+      "no_external_dependencies": true
+    }
+  },
+  "notes": "This v0.1 environment block declares that the substrate is static, deterministic, and free of runtime dependencies."
+}
