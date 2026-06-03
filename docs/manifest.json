@@ -4,6 +4,7 @@
   "description": "Deterministic semantic manifold for TNOPSI / DSLO Signal Ecology.",
   "about": "about.json",
   "metadata": "metadata.json",
+  "status": "status.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
