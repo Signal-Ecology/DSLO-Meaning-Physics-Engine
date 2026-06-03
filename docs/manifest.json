@@ -9,6 +9,13 @@
         "statement": "DSLO is a substrate-level meaning system that defines how signals, agents, and environments maintain stable semantics under drift.",
         "version": "1.0.0"
     }
+    {
+    "id": "dslo.drift.boundary.v1",
+    "type": "constraint",
+    "statement": "All DSLO interpretations must remain within the drift-bounded semantic corridor defined by the core invariants.",
+    "version": "1.0.0"
+}
+
 ]
   "corpus_index": "corpus/index.json"
 }
