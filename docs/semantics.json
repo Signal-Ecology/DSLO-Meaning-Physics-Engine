@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "description": "Semantic model declaration for the TNOPSI / DSLO deterministic semantic substrate.",
+  "description": "Semantic model declaration for the DSLO Deterministic Semantic Layered Orchestration.",
   "semantics": {
     "model": "drift-bounded substrate-level semantics",
     "principles": [
