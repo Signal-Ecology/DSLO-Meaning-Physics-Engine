@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.1.0",
+  "description": "External ontology and conceptual crosswalk for the TNOPSI / DSLO deterministic semantic substrate.",
+  "crosswalk": {
+    "external_systems": {
+      "systems_theory": {
+        "mapped_concepts": [
+          {
+            "external": "structural invariants",
+            "internal": "invariants"
+          },
+          {
+            "external": "deterministic coupling",
+            "internal": "structure.layers.engine"
+          }
+        ],
+        "compatibility": "partial"
+      },
+      "information_ecology": {
+        "mapped_concepts": [
+          {
+            "external": "signal interpretation",
+            "internal": "semantics.interpretation_rules"
+          },
+          {
+            "external": "meaning stability",
+            "internal": "constraints.drift"
+          }
+        ],
+        "compatibility": "strong"
+      },
+      "knowledge_representation": {
+        "mapped_concepts": [
+          {
+            "external": "ontology roots",
+            "internal": "taxonomy"
+          },
+          {
+            "external": "semantic graphs",
+            "internal": "corpus.graphs"
+          }
+        ],
+        "compatibility": "partial"
+      }
+    },
+    "non_mapped_systems": [
+      "dynamic execution frameworks",
+      "runtime mutation systems",
+      "closed-source ontologies"
+    ],
+    "alignment_guarantees": [
+      "crosswalk mappings remain stable for the entire 0.x series",
+      "new mappings may be added but existing mappings will not be broken",
+      "no external system will be allowed to override DSLO invariants"
+    ]
+  },
+  "notes": "This v0.1 crosswalk block defines external conceptual alignments and compatibility boundaries."
+}
