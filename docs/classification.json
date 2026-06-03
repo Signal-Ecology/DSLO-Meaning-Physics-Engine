@@ -1,11 +1,11 @@
 {
   "schema_version": "0.1.0",
-  "description": "Classification metadata for the TNOPSI / DSLO deterministic semantic substrate.",
+  "description": "Classification metadata for the DSLO Deterministic Semantic Layered Orchestration.",
   "classification": {
     "primary_domain": "Deterministic Semantics",
     "secondary_domains": [
       "Signal Ecology",
-      "DSLO (Deterministic Substrate Logic Ontology)",
+      "DSLO (Deterministic Semantic Layered Orchestration)",
       "Semantic Stability Research"
     ],
     "tags": [
