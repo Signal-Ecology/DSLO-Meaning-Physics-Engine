@@ -10,6 +10,7 @@
   "changelog": "changelog.json",
   "integrity": "integrity.json",
   "spec": "spec.json",
+  "license": "license.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
