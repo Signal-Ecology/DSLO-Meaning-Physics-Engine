@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Synthesis model for the TNOPSI / DSLO deterministic semantic substrate.",
+  "synthesis": {
+    "semantic_synthesis": [
+      "invariants anchor semantic interpretation",
+      "semantic rules operate on atomic nodes",
+      "graphs express relational meaning structures"
+    ],
+    "structural_synthesis": [
+      "header defines static substrate boundaries",
+      "corpus provides meaning-bearing units",
+      "engine performs deterministic initialization"
+    ],
+    "governance_synthesis": [
+      "versioning rules constrain evolution",
+      "constraints enforce drift-bounded behavior",
+      "validation ensures structural and semantic correctness"
+    ],
+    "mapping_synthesis": [
+      "internal mappings connect nodes, papers, and graphs",
+      "external crosswalks align DSLO with adjacent domains"
+    ],
+    "global_synthesis": [
+      "substrate meaning emerges from invariant-anchored, structure-aligned, semantically-interpreted corpus elements",
+      "all components operate under deterministic, read-only, drift-free guarantees"
+    ]
+  },
+  "notes": "This v0.1 synthesis block provides a unified integration model across all substrate components."
+}
