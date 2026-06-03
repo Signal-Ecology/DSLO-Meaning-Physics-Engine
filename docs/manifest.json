@@ -28,6 +28,7 @@
   "identity_extended": "identity-extended.json",
   "classification": "classification.json",
   "mapping": "mapping.json",
+  "crosswalk": "crosswalk.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
