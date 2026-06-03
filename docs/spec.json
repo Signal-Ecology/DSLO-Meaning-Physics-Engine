@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Specification for the TNOPSI / DSLO deterministic semantic substrate.",
+  "sections": {
+    "manifest": {
+      "required_fields": [
+        "schema_version",
+        "manifold_id",
+        "description",
+        "metadata",
+        "about",
+        "status",
+        "routes",
+        "capabilities",
+        "changelog",
+        "integrity",
+        "invariants",
+        "corpus_index"
+      ]
+    },
+    "invariant": {
+      "required_fields": [
+        "id",
+        "type",
+        "statement",
+        "version"
+      ],
+      "allowed_types": [
+        "definition",
+        "constraint"
+      ]
+    },
+    "node": {
+      "required_fields": [
+        "id",
+        "type",
+        "version",
+        "statement"
+      ],
+      "allowed_types": [
+        "semantic-node"
+      ]
+    },
+    "paper": {
+      "required_fields": [
+        "id",
+        "title",
+        "version",
+        "type",
+        "abstract",
+        "nodes"
+      ],
+      "allowed_types": [
+        "node-graph-paper"
+      ]
+    },
+    "graph": {
+      "required_fields": [
+        "id",
+        "title",
+        "version",
+        "type",
+        "nodes",
+        "edges"
+      ],
+      "allowed_types": [
+        "semantic-graph"
+      ]
+    }
+  },
+  "notes": "This v0.1 specification defines the minimal structural requirements for deterministic substrate validation."
+}
