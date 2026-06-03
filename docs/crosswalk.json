@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "description": "External ontology and conceptual crosswalk for the TNOPSI / DSLO deterministic semantic substrate.",
+  "description": "External ontology and conceptual crosswalk for the DSLO Deterministic Semantic Layered Orchestration.",
   "crosswalk": {
     "external_systems": {
       "systems_theory": {
