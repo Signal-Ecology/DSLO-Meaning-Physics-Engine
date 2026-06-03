@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Deterministic manifold signature for the TNOPSI / DSLO semantic substrate.",
+  "signature": {
+    "version": "0.1.0",
+    "signature_type": "deterministic-manifold-hash",
+    "components_included": [
+      "header",
+      "corpus",
+      "engine",
+      "invariants",
+      "constraints",
+      "semantics",
+      "structure",
+      "governance",
+      "validation",
+      "interfaces",
+      "coverage",
+      "roadmap",
+      "release",
+      "identity",
+      "classification",
+      "mapping",
+      "crosswalk",
+      "synthesis"
+    ],
+    "hashes": {
+      "header_hash": "pending-v0.1",
+      "corpus_hash": "pending-v0.1",
+      "engine_hash": "pending-v0.1",
+      "global_hash": "pending-v0.1"
+    },
+    "guarantees": [
+      "signature remains stable for the entire 0.1.x series",
+      "any change to any component requires a new signature",
+      "signature binds invariants, constraints, and semantics into a single deterministic identity"
+    ]
+  },
+  "notes": "This v0.1 signature block provides a deterministic fingerprint of the entire substrate."
+}
