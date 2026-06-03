@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "title": "DSLO Semantic Substrate",
+  "title": "DSLO Deterministic Semantic Layered Orchestration",
   "purpose": "To provide a deterministic, drift-bounded semantic substrate for the DSLO and Signal Ecology scientific frameworks.",
   "audience": [
     "biological readers",
