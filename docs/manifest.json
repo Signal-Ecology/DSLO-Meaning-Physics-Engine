@@ -7,6 +7,7 @@
   "status": "status.json",
   "routes": "routes.json",
   "capabilities": "capabilities.json",
+  "changelog": "changelog.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
