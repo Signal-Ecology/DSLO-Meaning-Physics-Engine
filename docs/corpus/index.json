@@ -9,5 +9,8 @@
   "nodes/dslo-definition-node.json"
 ]
 ,
-  "graphs": []
+ "graphs": [
+  "graphs/dslo-core-graph.json"
+]
+
 }
