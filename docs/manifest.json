@@ -29,6 +29,7 @@
   "classification": "classification.json",
   "mapping": "mapping.json",
   "crosswalk": "crosswalk.json",
+  "coherence": "coherence.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
