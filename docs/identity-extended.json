@@ -1,11 +1,11 @@
 {
   "schema_version": "0.1.0",
-  "description": "Extended identity metadata for the TNOPSI / DSLO deterministic semantic substrate.",
+  "description": "Extended identity metadata for the DSLO Deterministic Semantic Layered Orchestration.",
   "identity_extended": {
     "scientific_domain": [
       "Deterministic Semantics",
       "Signal Ecology",
-      "DSLO (Deterministic Substrate Logic Ontology)"
+      "DSLO (Deterministic Semantic Layered Orchestration)"
     ],
     "conceptual_ancestry": {
       "roots": [
@@ -21,10 +21,10 @@
       ]
     },
     "lineage": {
-      "substrate_family": "TNOPSI deterministic substrates",
+      "substrate_family": "DSLO deterministic substrates",
       "generation": "first-generation DSLO substrate",
       "compatibility": [
-        "TNOPSI v0.x",
+        "DSLO v0.x",
         "DSLO v0.x"
       ]
     },
