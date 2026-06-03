@@ -6,6 +6,7 @@
   "metadata": "metadata.json",
   "status": "status.json",
   "routes": "routes.json",
+  "capabilities": "capabilities.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
