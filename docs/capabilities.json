@@ -1,0 +1,20 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Declared capabilities of the TNOPSI / DSLO deterministic semantic substrate.",
+  "capabilities": {
+    "deterministic_initialization": true,
+    "drift_bounded_semantics": true,
+    "node_graph_corpus": true,
+    "invariant_enforcement": true,
+    "machine_readable_metadata": true,
+    "machine_readable_status": true,
+    "canonical_routing": true,
+    "human_safe_about_block": true
+  },
+  "limitations": {
+    "no_dynamic_execution": true,
+    "no_runtime_mutation": true,
+    "no_user_generated_semantics": true,
+    "no_unbounded_drift": true
+  }
+}
