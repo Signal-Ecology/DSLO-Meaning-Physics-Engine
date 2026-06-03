@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Structural model for the TNOPSI / DSLO deterministic semantic substrate.",
+  "structure": {
+    "layers": [
+      {
+        "name": "header",
+        "components": [
+          "metadata",
+          "about",
+          "status",
+          "routes",
+          "capabilities",
+          "changelog",
+          "integrity",
+          "spec",
+          "license",
+          "taxonomy",
+          "index_map",
+          "environment",
+          "profile",
+          "semantics"
+        ],
+        "role": "Defines the substrate's identity, governance, semantics, and structural rules."
+      },
+      {
+        "name": "corpus",
+        "components": [
+          "nodes",
+          "papers",
+          "graphs"
+        ],
+        "role": "Contains the semantic content of the substrate."
+      },
+      {
+        "name": "engine",
+        "components": [
+          "substrate-engine.js",
+          "init.json"
+        ],
+        "role": "Provides deterministic initialization and machine-level access."
+      }
+    ],
+    "constraints": {
+      "no_cross_layer_mutation": true,
+      "header_is_static": true,
+      "corpus_is_append_only": true,
+      "engine_is_deterministic": true
+    }
+  },
+  "notes": "This v0.1 structure block defines the minimal architectural layers and constraints of the substrate."
+}
