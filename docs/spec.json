@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1.0",
-  "description": "Specification for the TNOPSI / DSLO deterministic semantic substrate.",
+  "description": "Specification for the DSLO Deterministic Semantic Layered Orchestration.",
   "sections": {
     "manifest": {
       "required_fields": [
