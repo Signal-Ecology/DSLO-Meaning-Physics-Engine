@@ -13,6 +13,7 @@
   "license": "license.json",
   "taxonomy": "taxonomy.json",
   "index_map": "index-map.json",
+  "environment": "environment.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
