@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Version history and semantic changes for the TNOPSI / DSLO deterministic semantic substrate.",
+  "entries": [
+    {
+      "version": "0.1.0",
+      "date": "2026-06-03T00:00:00Z",
+      "changes": {
+        "invariants": [
+          "Added core definition invariant (dslo.core.definition.v1)",
+          "Added drift-bounded constraint (dslo.drift.boundary.v1)"
+        ],
+        "corpus": [
+          "Added DSLO core definition paper",
+          "Added standalone DSLO definition node",
+          "Added DSLO core graph"
+        ],
+        "infrastructure": [
+          "Created manifest.json",
+          "Created substrate-engine.js",
+          "Created init.json",
+          "Added metadata.json",
+          "Added about.json",
+          "Added status.json",
+          "Added routes.json",
+          "Added capabilities.json"
+        ]
+      }
+    }
+  ]
+}
