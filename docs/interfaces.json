@@ -1,0 +1,48 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Interface model for the TNOPSI / DSLO deterministic semantic substrate.",
+  "interfaces": {
+    "read": {
+      "manifest": "read-only",
+      "metadata": "read-only",
+      "about": "read-only",
+      "status": "read-only",
+      "routes": "read-only",
+      "capabilities": "read-only",
+      "changelog": "read-only",
+      "integrity": "read-only",
+      "spec": "read-only",
+      "license": "read-only",
+      "taxonomy": "read-only",
+      "index_map": "read-only",
+      "environment": "read-only",
+      "profile": "read-only",
+      "semantics": "read-only",
+      "structure": "read-only",
+      "governance": "read-only",
+      "constraints": "read-only",
+      "validation": "read-only",
+      "corpus": "read-only"
+    },
+    "write": {
+      "allowed": false,
+      "exceptions": []
+    },
+    "operations": {
+      "allowed": [
+        "deterministic initialization",
+        "static reading",
+        "semantic interpretation",
+        "graph traversal"
+      ],
+      "forbidden": [
+        "mutation",
+        "execution",
+        "dynamic evaluation",
+        "external calls",
+        "runtime modification"
+      ]
+    }
+  },
+  "notes": "This v0.1 interfaces block defines the substrate's read-only, deterministic interaction model."
+}
