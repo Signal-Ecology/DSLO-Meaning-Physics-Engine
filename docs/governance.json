@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1.0",
+  "description": "Governance model for the TNOPSI / DSLO deterministic semantic substrate.",
+  "governance": {
+    "versioning_policy": {
+      "model": "semantic-versioning",
+      "rules": [
+        "major version increments require invariant changes",
+        "minor version increments allow new nodes, papers, or graphs",
+        "patch version increments allow corrections without semantic change"
+      ]
+    },
+    "change_control": {
+      "invariants": "immutable once published",
+      "header_components": "static for each version",
+      "corpus": "append-only",
+      "engine": "deterministic and version-locked"
+    },
+    "drift_control": {
+      "allowed": false,
+      "mechanisms": [
+        "invariant enforcement",
+        "structural constraints",
+        "semantic interpretation rules"
+      ]
+    },
+    "update_process": {
+      "steps": [
+        "propose change",
+        "validate against spec",
+        "verify integrity",
+        "update changelog",
+        "publish new version"
+      ]
+    }
+  },
+  "notes": "This v0.1 governance block defines the minimal rules for drift-bounded, reproducible substrate evolution."
+}
