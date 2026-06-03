@@ -30,6 +30,7 @@
   "mapping": "mapping.json",
   "crosswalk": "crosswalk.json",
   "coherence": "coherence.json",
+  "synthesis": "synthesis.json",
   "invariants": [
     {
         "id": "dslo.core.definition.v1",
