@@ -1,41 +1,95 @@
-// DSLO Substrate Engine (v0.1 minimal)
-// Loads manifest + corpus index and exposes a deterministic initialization payload.
+// DSLO Deterministic Semantic Layered Orchestration
+// v0.1 – Proof-of-Concept Substrate Engine
 
-async function loadJSON(path) {
-    const response = await fetch(path);
-    if (!response.ok) {
-        throw new Error(`Failed to load ${path}`);
+const DSLO_Substrate = (() => {
+    const ROOT = "./docs";
+
+    async function loadJSON(path) {
+        const res = await fetch(path);
+        if (!res.ok) {
+            throw new Error(`Failed to load ${path}: ${res.status} ${res.statusText}`);
+        }
+        return res.json();
     }
-    return await response.json();
-}
 
-async function initializeSubstrate() {
-    const manifest = await loadJSON("manifest.json");
-    const corpusIndex = await loadJSON("corpus/index.json");
+    async function loadManifest() {
+        return loadJSON(`${ROOT}/manifest.json`);
+    }
 
-    return {
-        schema_version: manifest.schema_version,
-        manifold_id: manifest.manifold_id,
-        invariants: manifest.invariants,
-        corpus: corpusIndex,
-        initialized_at: new Date().toISOString()
-    };
-}
-
-// Expose globally for crawlers and deterministic clients
-window.DSLO_Substrate = {
-    initialize: initializeSubstrate,
-    fetchInit: async function() {
-        const init = await loadJSON("init.json");
-        const manifest = await loadJSON(init.manifest);
-        const corpusIndex = await loadJSON(init.corpus_index);
-
+    async function loadCorpusEntry(entry) {
+        const fullPath = `${ROOT}/corpus/${entry.path}`;
+        const data = await loadJSON(fullPath);
         return {
-            schema_version: manifest.schema_version,
-            manifold_id: manifest.manifold_id,
-            invariants: manifest.invariants,
-            corpus: corpusIndex,
-            initialized_at: new Date().toISOString()
+            id: entry.id,
+            type: entry.type,
+            version: entry.version,
+            data
         };
     }
-};
+
+    async function loadCorpus(manifest) {
+        if (!manifest.corpus || !Array.isArray(manifest.corpus)) {
+            return [];
+        }
+        const tasks = manifest.corpus.map(loadCorpusEntry);
+        return Promise.all(tasks);
+    }
+
+    async function loadGraphs(manifest) {
+        if (!manifest.graphs || !Array.isArray(manifest.graphs)) {
+            return [];
+        }
+        const tasks = manifest.graphs.map(g => loadJSON(`${ROOT}/graphs/${g.path}`));
+        const graphs = await Promise.all(tasks);
+        return graphs.map((g, i) => ({
+            id: manifest.graphs[i].id,
+            type: manifest.graphs[i].type,
+            data: g
+        }));
+    }
+
+    async function loadInvariants(manifest) {
+        if (!manifest.invariants || !Array.isArray(manifest.invariants)) {
+            return [];
+        }
+        const tasks = manifest.invariants.map(inv => loadJSON(`${ROOT}/invariants/${inv.path}`));
+        const invariants = await Promise.all(tasks);
+        return invariants.map((inv, i) => ({
+            id: manifest.invariants[i].id,
+            scope: manifest.invariants[i].scope || "local",
+            data: inv
+        }));
+    }
+
+    async function initialize() {
+        // 1. Load manifest
+        const manifest = await loadManifest();
+
+        // 2. Load core components in parallel
+        const [corpus, graphs, invariants] = await Promise.all([
+            loadCorpus(manifest),
+            loadGraphs(manifest),
+            loadInvariants(manifest)
+        ]);
+
+        // 3. Build deterministic payload
+        const payload = {
+            version: manifest.version || "0.1",
+            timestamp: new Date().toISOString(),
+            manifest,
+            corpus,
+            graphs,
+            invariants
+        };
+
+        return payload;
+    }
+
+    return {
+        initialize
+    };
+})();
+
+// Expose globally for browser
+window.DSLO_Substrate = DSLO_Substrate;
+
