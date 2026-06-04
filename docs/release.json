@@ -20,7 +20,10 @@
       "invariants remain immutable",
       "corpus remains append-only",
       "header remains stable for the entire 0.x series"
-    ]
+    ],
+    "components": {
+      "ai_native_document_protocol": "1.0"
+    }
   },
   "additional_notes": "This v0.1 release establishes the substrate foundation for all future DSLO and Signal Ecology work."
 }
