@@ -35,6 +35,16 @@
       "tags remain consistent across minor versions",
       "cross-domain mappings expand but do not break existing mappings"
     ]
+    "ai_native_document_protocol": {
+    "class": "protocol",
+    "domain": "ai-native-communication",
+    "tags": [
+      "ai-native",
+      "dual-substrate",
+      "geometry-anchored",
+      "drift-resistant"
+    ]
+  }
   },
   "notes": "This v0.1 classification block provides formal scientific classification and cross-domain mapping for the substrate."
 }
