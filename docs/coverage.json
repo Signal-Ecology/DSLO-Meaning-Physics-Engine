@@ -32,6 +32,11 @@
       "write_operations": "none",
       "notes": "Interface model is complete for v0.1."
     },
+    "ai_native_document_protocol": {
+     "status": "complete",
+     "notes": "Protocol is fully declared and structurally encoded as a node-graph for v1.0."
+    }
+
     "planned_expansions": [
       "additional nodes",
       "additional papers",
