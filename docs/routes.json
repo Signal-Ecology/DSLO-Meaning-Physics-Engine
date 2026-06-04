@@ -6,6 +6,7 @@
     "corpus_index": "corpus/index.json",
     "metadata": "metadata.json",
     "about": "about.json",
+    "ai_native_document_protocol": "docs/ai-native-document-protocol.json",
     "status": "status.json",
     "engine": "substrate-engine.js",
     "init": "init.json"
