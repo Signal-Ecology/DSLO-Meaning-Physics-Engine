@@ -6,6 +6,7 @@
       "manifest": "read-only",
       "metadata": "read-only",
       "about": "read-only",
+      "ai_native_document_protocol": "read-only"
       "status": "read-only",
       "routes": "read-only",
       "capabilities": "read-only",
