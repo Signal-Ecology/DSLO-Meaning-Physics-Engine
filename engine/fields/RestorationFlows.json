@@ -1,12 +1,13 @@
 {
-  "field": "collapse-boundaries",
+  "field": "restoration",
   "version": "0.1",
-  "description": "Boundary surfaces defining no-cross regions where semantic collapse occurs.",
-  "boundaries": [],
-  "units": "boundary-surface",
+  "description": "Semantic restoration flows that return the system to a stable region after drift or collapse.",
+  "flows": [],
+  "units": "restoration-flow",
   "metadata": {
     "generated": "manual-v0.1",
     "status": "placeholder"
   }
 }
+
 
