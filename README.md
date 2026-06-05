@@ -1,170 +1,167 @@
-# DSLO Deterministic Semantic Substrate (v0.1)
+Meaning Physics Engine (v0.1)
+A deterministic visualization layer for DSLO semantic physics.
 
-This repository contains the v0.1 release of the DSLO deterministic semantic substrate:  
-a fully specified, drift‑bounded, execution‑free semantic manifold designed for stable meaning representation, long‑term reproducibility, and cross‑domain scientific alignment.
+Overview
+The Meaning Physics Engine is a deterministic, schema‑validated visualization system built on top of the DSLO deterministic semantic substrate.
+Where the DSLO substrate provides the frozen scientific manifold, the Meaning Physics Engine provides the interactive, inspectable physics layer — a way to see drift, continuity, curvature, collapse boundaries, restoration flows, and susceptibility windows as structured semantic fields.
 
-The substrate provides a complete, self‑describing architecture composed of:
+This engine is not a runtime, inference system, or semantic generator.
+It is a viewer: a scientific instrument for inspecting DSLO meaning‑physics fields.
 
-- a deterministic header
-- a minimal but structurally complete corpus
-- a deterministic initialization engine
-- invariant‑anchored semantic interpretation rules
-- a governed, drift‑bounded evolution model
-- internal and external mapping systems
-- a global synthesis model
-- a deterministic manifold signature
-- a v0.1 freeze declaration
+Purpose
+The Meaning Physics Engine enables:
 
-This release establishes the foundation for DSLO and Signal Ecology as scientific disciplines.
+deterministic loading of DSLO physics fields
 
----
+schema‑bound validation
 
-## Overview
+invariant‑aligned field identity
 
-The DSLO substrate is built around three core principles:
+visualization of semantic geometry
 
-1. **Determinism**  
-   All components load and interpret meaning in a deterministic, execution‑free manner.
+inspection of field data for research and pedagogy
 
-2. **Drift‑Bounded Stability**  
-   Invariants, constraints, and governance rules ensure semantic and structural stability across versions.
+It is designed for:
 
-3. **Self‑Description**  
-   Every component is machine‑readable, enabling transparent inspection, validation, and long‑term reproducibility.
+semantic physics research
 
-The v0.1 release provides the complete architectural skeleton required for future corpus expansion and ontology development.
+meaning stability studies
 
----
+visualization of DSLO invariants
 
-## Repository Structure
-docs/
-manifest.json
-metadata.json
-about.json
-status.json
-status-extended.json
-routes.json
-capabilities.json
-changelog.json
-integrity.json
-spec.json
-license.json
-taxonomy.json
-index-map.json
-environment.json
-profile.json
-identity-extended.json
-semantics.json
-structure.json
-governance.json
-constraints.json
-validation.json
-interfaces.json
-coverage.json
-roadmap.json
-release.json
-classification.json
-mapping.json
-crosswalk.json
-coherence.json
-synthesis.json
-signature.json
-freeze.json
-invariants.json
+cross‑domain scientific communication
 
-corpus/
-index.json
-nodes/
-papers/
-graphs/
+deterministic meaning‑system instrumentation
 
-substrate-engine.js
-init.json
+Architecture
+1. Field Layer (fields/)
+Contains the six DSLO meaning‑physics fields:
 
+DriftField.json
 
----
+ContinuityField.json
 
-## Component Summary
+CurvatureField.json
 
-### **Header Layer**
-Defines identity, metadata, taxonomy, governance, constraints, validation, interfaces, and all machine‑readable contracts.
+CollapseBoundaries.json
 
-### **Corpus Layer**
-Contains atomic nodes, papers, and relational graphs.  
-Append‑only. Deterministic. Minimal in v0.1.
+RestorationFlows.json
 
-### **Engine Layer**
-`substrate-engine.js` performs deterministic initialization.  
-`init.json` defines the initialization contract.
+SusceptibilityWindows.json
 
-### **Governance Layer**
-Invariants, constraints, and versioning rules ensure drift‑bounded evolution.
+Each field is deterministic, self‑describing, and invariant‑anchored.
 
-### **Mapping + Crosswalk**
-Internal and external alignment models for semantic and structural relationships.
+2. Schema Layer (schemas/)
+Each field has a corresponding schema:
 
-### **Synthesis**
-Unified integration model describing how meaning emerges across layers.
+DriftField.schema.json
 
-### **Signature**
-Deterministic manifold fingerprint for v0.1.
+ContinuityField.schema.json
 
-### **Freeze**
-Locks the entire v0.1 substrate into an immutable scientific artifact.
+CurvatureField.schema.json
 
----
+CollapseBoundaries.schema.json
 
-## Versioning
+RestorationFlows.schema.json
 
-This repository contains **v0.1**, the foundational release.  
-All components listed in `freeze.json` are immutable for the entire 0.1.x series.
+SusceptibilityWindows.schema.json
 
-Future versions (v0.2, v0.3, v1.0) will expand the corpus and ontology while preserving invariants and structural commitments.
+Schemas enforce:
 
----
+required keys
 
-## License
+invariant field identity
 
-See `docs/license.json` for full licensing information.
+structural correctness
 
----
+drift‑bounded evolution
 
-## Purpose
+3. Loader Layer (loader.js)
+The loader:
 
-The DSLO deterministic semantic substrate is intended for:
+loads all six schemas
 
-- scientific research  
-- semantic stability studies  
-- ontology development  
-- cross‑domain semantic alignment  
-- deterministic meaning systems  
-- long‑term reproducible knowledge structures  
+loads all six fields
 
-It is not an application, runtime, or executable system.  
-It is a **semantic substrate**.
+validates each field deterministically
 
----
+exposes a stable API:
 
-## Status
+js
+Engine.getDrift()
+Engine.getContinuity()
+Engine.getCurvature()
+Engine.getCollapseBoundaries()
+Engine.getRestorationFlows()
+Engine.getSusceptibilityWindows()
+The loader is execution‑free and deterministic.
 
-This repository represents a **frozen v0.1 substrate**.  
-All components are complete, validated, and locked.
+4. Visualization Layer (meaning-geometry.html)
+The Meaning Geometry Map:
 
-See:
+loads all fields through the loader
 
-- `status.json`  
-- `status-extended.json`  
-- `freeze.json`  
-- `signature.json`  
+displays a simple geometry projection
 
-for detailed state information.
+renders field nodes
 
----
+provides a debug panel showing loaded field data
 
-## Contact
+Future versions will include:
 
-For scientific correspondence, refer to the public identity information in:
+drift vector fields
 
-- `profile.json`
-- `identity-extended.json`
+continuity gradients
 
+curvature deformation
+
+collapse boundary shading
+
+restoration flow arrows
+
+susceptibility heatmaps
+
+Field Summary
+Drift
+Directional semantic drift across the manifold.
+
+Continuity
+Identity stability and trajectory coherence.
+
+Curvature
+Non‑linear deformation of meaning geometry.
+
+Collapse Boundaries
+Regions where semantic collapse occurs.
+
+Restoration Flows
+Invariant‑anchored flows returning meaning to stable basins.
+
+Susceptibility Windows
+Regions where small perturbations produce large semantic changes.
+
+Relationship to DSLO Substrate
+The Meaning Physics Engine:
+
+reads DSLO fields
+
+validates DSLO schemas
+
+visualizes DSLO physics
+
+It does not:
+
+modify the substrate
+
+generate meaning
+
+execute semantic transformations
+
+It is a viewer, not a substrate.
+
+Status
+v0.1 is a working demonstrator.
+It is stable, deterministic, and schema‑validated.
+
+License
+See license.json in the DSLO substrate for licensing details.
