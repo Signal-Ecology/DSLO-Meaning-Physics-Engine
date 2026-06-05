@@ -7,7 +7,7 @@ const Engine = {
         continuity: null,
         curvature: null,
         collapse: null,
-        restoration: null,
+        restoration-flows: null,
         susceptibility: null
     },
 
@@ -16,7 +16,7 @@ const Engine = {
         continuity: null,
         curvature: null,
         collapse: null,
-        restoration: null,
+        restoration-flows: null,
         susceptibility: null
     },
 
@@ -33,7 +33,7 @@ const Engine = {
         this.schemas.continuity = await this.loadJSON("../schemas/ContinuityField.schema.json");
         this.schemas.curvature = await this.loadJSON("../schemas/CurvatureField.schema.json");
         this.schemas.collapse = await this.loadJSON("../schemas/CollapseBoundaries.schema.json");
-        this.schemas.restoration = await this.loadJSON("../schemas/RestorationFlows.schema.json");
+        this.schemas.restoration-flows = await this.loadJSON("../schemas/RestorationFlows.schema.json");
         this.schemas.susceptibility = await this.loadJSON("../schemas/SusceptibilityWindows.schema.json");
     },
 
@@ -46,7 +46,7 @@ const Engine = {
         this.fields.continuity = await this.loadJSON("../fields/ContinuityField.json");
         this.fields.curvature = await this.loadJSON("../fields/CurvatureField.json");
         this.fields.collapse = await this.loadJSON("../fields/CollapseBoundaries.json");
-        this.fields.restoration = await this.loadJSON("../fields/RestorationFlows.json");
+        this.fields.restoration-flows = await this.loadJSON("../fields/RestorationFlows.json");
         this.fields.susceptibility = await this.loadJSON("../fields/SusceptibilityWindows.json");
 
         // Validate each field
@@ -54,7 +54,7 @@ const Engine = {
         this.validateField("continuity", this.fields.continuity, this.schemas.continuity);
         this.validateField("curvature", this.fields.curvature, this.schemas.curvature);
         this.validateField("collapse", this.fields.collapse, this.schemas.collapse);
-        this.validateField("restoration", this.fields.restoration, this.schemas.restoration);
+        this.validateField("restoration-flows", this.fields.restoration-flows, this.schemas.restoration-flows);
         this.validateField("susceptibility", this.fields.susceptibility, this.schemas.susceptibility);
 
         return this.fields;
@@ -94,7 +94,7 @@ const Engine = {
     getContinuity() { return this.fields.continuity; },
     getCurvature() { return this.fields.curvature; },
     getCollapseBoundaries() { return this.fields.collapse; },
-    getRestorationFlows() { return this.fields.restoration; },
+    getRestorationFlows() { return this.fields.restoration-flows; },
     getSusceptibilityWindows() { return this.fields.susceptibility; }
 };
 
