@@ -1,1 +1,42 @@
-{}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Collapse Boundaries — Meaning Physics Engine</title>
+    <script src="../loader.js"></script>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        #canvas { border: 1px solid #ccc; background: white; }
+        pre { background: #eee; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>Collapse Boundaries</h1>
+<p>Displays no‑cross regions where semantic collapse occurs.</p>
+
+<canvas id="canvas" width="600" height="400"></canvas>
+
+<h2>Loaded Collapse Boundaries (Debug)</h2>
+<pre id="output">Loading…</pre>
+
+<script>
+Engine.loadFields().then(fields => {
+    document.getElementById("output").textContent =
+        JSON.stringify(fields.collapse, null, 2);
+
+    const ctx = document.getElementById("canvas").getContext("2d");
+
+    // v0.1 placeholder visualization
+    ctx.strokeStyle = "#aa55ff";
+    ctx.lineWidth = 4;
+    ctx.strokeRect(150, 100, 300, 200);
+
+    ctx.fillStyle = "#000";
+    ctx.fillText("Collapse Boundary Placeholder", 200, 220);
+});
+</script>
+
+</body>
+</html>
+
