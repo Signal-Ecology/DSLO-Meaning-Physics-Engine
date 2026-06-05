@@ -1,1 +1,39 @@
-{}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drift Monitor — Meaning Physics Engine</title>
+    <script src="../loader.js"></script>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        #canvas { border: 1px solid #ccc; background: white; }
+        pre { background: #eee; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>Drift Monitor</h1>
+<p>Visualizes drift magnitude and directional instability.</p>
+
+<canvas id="canvas" width="600" height="400"></canvas>
+
+<h2>Loaded Drift Field (Debug)</h2>
+<pre id="output">Loading…</pre>
+
+<script>
+Engine.loadFields().then(fields => {
+    document.getElementById("output").textContent =
+        JSON.stringify(fields.drift, null, 2);
+
+    const ctx = document.getElementById("canvas").getContext("2d");
+
+    // v0.1 placeholder visualization
+    ctx.fillStyle = "#ff5555";
+    ctx.fillRect(100, 100, 200, 200);
+    ctx.fillStyle = "#000";
+    ctx.fillText("Drift Field Placeholder", 150, 220);
+});
+</script>
+
+</body>
+</html>
