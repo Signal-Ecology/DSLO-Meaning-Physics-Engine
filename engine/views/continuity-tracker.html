@@ -1,1 +1,43 @@
-{}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Continuity Tracker — Meaning Physics Engine</title>
+    <script src="../loader.js"></script>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        #canvas { border: 1px solid #ccc; background: white; }
+        pre { background: #eee; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>Continuity Tracker</h1>
+<p>Shows identity stability and trajectory coherence.</p>
+
+<canvas id="canvas" width="600" height="400"></canvas>
+
+<h2>Loaded Continuity Field (Debug)</h2>
+<pre id="output">Loading…</pre>
+
+<script>
+Engine.loadFields().then(fields => {
+    document.getElementById("output").textContent =
+        JSON.stringify(fields.continuity, null, 2);
+
+    const ctx = document.getElementById("canvas").getContext("2d");
+
+    // v0.1 placeholder visualization
+    ctx.fillStyle = "#55aaff";
+    ctx.beginPath();
+    ctx.arc(300, 200, 80, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.fillStyle = "#000";
+    ctx.fillText("Continuity Field Placeholder", 240, 200);
+});
+</script>
+
+</body>
+</html>
+
