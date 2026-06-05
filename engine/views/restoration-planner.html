@@ -1,1 +1,46 @@
-{}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restoration Planner — Meaning Physics Engine</title>
+    <script src="../loader.js"></script>
+    <style>
+        body { font-family: Arial; margin: 40px; }
+        #canvas { border: 1px solid #ccc; background: white; }
+        pre { background: #eee; padding: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>Restoration Planner</h1>
+<p>Shows valid restoration paths for perturbed states.</p>
+
+<canvas id="canvas" width="600" height="400"></canvas>
+
+<h2>Loaded Restoration Flows (Debug)</h2>
+<pre id="output">Loading…</pre>
+
+<script>
+Engine.loadFields().then(fields => {
+    document.getElementById("output").textContent =
+        JSON.stringify(fields.restoration, null, 2);
+
+    const ctx = document.getElementById("canvas").getContext("2d");
+
+    // v0.1 placeholder visualization
+    ctx.strokeStyle = "#55cc55";
+    ctx.lineWidth = 3;
+    ctx.beginPath();
+    ctx.moveTo(100, 300);
+    ctx.lineTo(300, 100);
+    ctx.lineTo(500, 300);
+    ctx.stroke();
+
+    ctx.fillStyle = "#000";
+    ctx.fillText("Restoration Flow Placeholder", 220, 320);
+});
+</script>
+
+</body>
+</html>
+
