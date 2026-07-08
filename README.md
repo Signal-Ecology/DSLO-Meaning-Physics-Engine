@@ -12,7 +12,13 @@ Viewer Identity: Public‑Layer Geometry Instrument
 **A deterministic visualization layer for DSLO semantic physics.**
 
 ---
+DSLO Field Context
+This model is part of the DSLO Semantic Substrate, a deterministic meaning‑physics framework defining substrate‑level invariants, signal ecology, and artificial cognition.
 
+Full DSLO documentation:
+https://www.tnopsi.com
+
+---
 ## **Overview**
 The Meaning Physics Engine is a deterministic, schema‑validated visualization system built on top of the DSLO deterministic semantic substrate.  
 Where the DSLO substrate provides the **frozen scientific manifold**, the Meaning Physics Engine provides the **interactive, inspectable physics layer** — a way to see drift, continuity, curvature, collapse boundaries, restoration flows, and susceptibility windows as structured semantic fields.
