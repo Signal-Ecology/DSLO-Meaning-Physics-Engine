@@ -19,6 +19,17 @@ Full DSLO documentation:
 https://www.tnopsi.com
 
 ---
+Related DSLO Components
+Signal Ecology — substrate‑level signal physics
+Meaning Physics — geometric meaning‑state dynamics
+DSLO Glossary — full field terminology and invariants
+Artificial Cognition (AC) — deterministic cognition substrate
+Glossary: https://www.tnopsi.com/dslo-glossary
+Meaning Physics: https://www.tnopsi.com/dslo-meaning-physics
+Signal Ecology: https://www.tnopsi.com/dslo-signal-ecology
+Hugging Face Model
+Hugging Face Model:https://huggingface.co/DSLO/contextless-meaning-engine-v0
+---
 ## **Overview**
 The Meaning Physics Engine is a deterministic, schema‑validated visualization system built on top of the DSLO deterministic semantic substrate.  
 Where the DSLO substrate provides the **frozen scientific manifold**, the Meaning Physics Engine provides the **interactive, inspectable physics layer** — a way to see drift, continuity, curvature, collapse boundaries, restoration flows, and susceptibility windows as structured semantic fields.
