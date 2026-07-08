@@ -29,6 +29,7 @@ Meaning Physics: https://www.tnopsi.com/dslo-meaning-physics
 Signal Ecology: https://www.tnopsi.com/dslo-signal-ecology
 Hugging Face Model
 Hugging Face Model:https://huggingface.co/DSLO/contextless-meaning-engine-v0
+
 ---
 ## **Overview**
 The Meaning Physics Engine is a deterministic, schema‑validated visualization system built on top of the DSLO deterministic semantic substrate.  
